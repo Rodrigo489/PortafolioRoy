@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Ilustraciones</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+
+body{
+    margin:0;
+    font-family:'Montserrat', sans-serif;
+    background:linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)),
+    url('imagenes/fondo.jpg') no-repeat center center fixed;
+    background-size:cover;
+}
+
+.contenedor{
+    width:90%;
+    max-width:1750px;
+    background:white;
+    border-radius:12px;
+    padding:20px;
+    box-sizing:border-box;
+    box-shadow:0 4px 15px rgba(0,0,0,0.1);
+    margin:50px auto;
+}
+
+.titulo{
+    text-align:center;
+    font-size:2em;
+    font-weight:700;
+    margin-bottom:25px;
+}
+
+.galeria{
+    display:flex;
+    flex-direction:column;
+    gap:30px;
+}
+
+.item{
+    background:white;
+    padding:15px;
+    border-radius:10px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.1);
+    text-align:center;
+}
+
+.item img{
+    display:block;
+    width:100%;
+    height:400px;
+    object-fit:contain;
+    border-radius:8px;
+}
+
+.item p{
+    margin-top:15px;
+    color:#555;
+    line-height:1.5;
+}
+
+.botones{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:15px;
+    margin-top:35px;
+}
+
+.botones a{
+    display:inline-block;
+    padding:12px 25px;
+    border:2px solid #222;
+    border-radius:6px;
+    text-decoration:none;
+    color:#222;
+    font-weight:500;
+    transition:0.3s;
+}
+
+.botones a:hover{
+    background:#222;
+    color:white;
+}
+
+@media(max-width:600px){
+    .contenedor{
+        width:94%;
+        margin:20px auto;
+        padding:12px;
+    }
+
+    .item img{
+        height:250px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="contenedor">
+
+    <div class="titulo">Ilustraciones</div>
+
+    <div class="galeria">
+
+        <div class="item">
+            <img src="imagenes/spiderman.jpg"
+                 alt="Ilustración de Spider-Man">
+            <p>Dibujo de Spider-Man hecho en Photoshop.</p>
+        </div>
+
+        <div class="item">
+            <img src="imagenes/cactus.jpg"
+                 alt="Ilustración de un cactus en pixel art">
+            <p>Dibujo de un cactus hecho en Aseprite.</p>
+        </div>
+
+        <div class="item">
+            <img src="imagenes/comida.jpg"
+                 alt="Ilustración de una cena navideña en pixel art">
+            <p>Dibujo de una cena navideña hecho en Aseprite.</p>
+        </div>
+
+    </div>
+
+    <div class="botones">
+        <a href="index.html">Inicio</a>
+        <a href="acercademi.html">Acerca de mí</a>
+        <a href="contactos.html">Contacto</a>
+    </div>
+
+</div>
+
+</body>
+</html>
